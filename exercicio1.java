@@ -1,37 +1,14 @@
-/*1-	Faça um programa que receba três inteiros e diga qual deles é o maior.*/
-
-
-package Projeto28;
-import java.util.Scanner;
-
+package LACOSREPETICAO;
+/*Informar todos os números de 1000 a 1999 que quando divididos por 11
+obtemos resto = 5.*/
 public class exercicio1 {
 
 	public static void main(String[] args) {
-		
-		int x, y, z;
-		
-		Scanner read = new Scanner(System.in);
-		
-		System.out.println("\nEntre com o primeiro número: ");
-		x = read.nextInt();
-		System.out.println("\nEntre com o segundo número: ");
-		y = read.nextInt();
-		System.out.println("\nEntre com o terceiro número: ");
-		z = read.nextInt();
-	
-		if(x > y && x > z)
-		{
-			System.out.println("\n"+x+" é o maior!");
+		// TODO Auto-generated method stub
+		for (int i=1000; i < 2000; i++){
+		    if (i % 11== 5) 
+		        System.out.print("\n"+i);
+		    }
 		}
-		else if (y>x && y>z)
-		{
-			System.out.println("\n"+y+" é o maior número!");
-		}
-		else
-			System.out.println("\n"+z+" é o maior!");
-
-	}	
-
 	}
-
 
