@@ -1,0 +1,25 @@
+drop database if exists Exercicio3;
+create database Exercicio3;
+
+use Exercicio3;
+
+create table Regescola(
+
+  id integer(4) primary key auto_increment not null,
+  nome_estudante varchar(60),
+  RA integer(16) not null,
+  media_final double,
+  ano varchar(16),
+  idade integer(3)
+
+);
+insert into  Regescola (nome_estudante, RA, media_final, ano, idade) values ("Fulano", 10000, 7.5, "9* ano", 15);
+insert into  Regescola (nome_estudante, RA, media_final, ano, idade) values ("Ciclano", 20000, 8.2, "9* ano", 14);
+insert into  Regescola (nome_estudante, RA, media_final, ano, idade) values ("Beltrano", 30000, 4.0, "9* ano", 15);
+insert into  Regescola (nome_estudante, RA, media_final, ano, idade) values ("Salzano", 40000, 7.5, "9* ano", 14);
+
+
+
+select * from Regescola;
+select * from Regescola where media_final >7;
+select * from Regescola where media_final < 7;

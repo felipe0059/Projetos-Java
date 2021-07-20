@@ -1,0 +1,26 @@
+drop database if exists Exercicio1;
+create database Exercicio1;
+
+use Exercicio1;
+
+create table Funcionariosrh( 
+	
+    id integer(4) primary key auto_increment not null,
+    nome varchar(15) not null,
+    funcao varchar(10) not null,
+    salario double,
+    Tempodecasa integer(4)
+    
+);
+
+insert into  Funcionariosrh (nome, funcao, salario, Tempodecasa) values ("Fulano", "DesenvolvedorJr", 1800.00, 03);
+insert into  Funcionariosrh (nome, funcao, salario, Tempodecasa) values ("Ciclano", "DesenvolvedoraPl", 4200.00, 02);
+insert into  Funcionariosrh (nome, funcao, salario, Tempodecasa) values ("Beltrano", "Secretaria", 1900.00, 05);
+insert into  Funcionariosrh (nome, funcao, salario, Tempodecasa) values ("Trajano", "Tecnico", 4000.00, 04);
+insert into  Funcionariosrh (nome, funcao, salario, Tempodecasa) values ("Praiano", "Scrum", 9000.00, 07);
+
+select * from Funcionariosrh;
+select * from Funcionariosrh where salario >2000;
+select * from Funcionariosrh where salario < 2000;
+
+

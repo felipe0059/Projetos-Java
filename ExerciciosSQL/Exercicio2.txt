@@ -1,0 +1,27 @@
+drop database if exists Exercicio2;
+create database Exercicio2;
+
+use Exercicio2;
+
+create table produtosestq(
+
+  id integer(4) primary key auto_increment not null,
+  nomedoproduto varchar(20),
+  partnumber integer(5) not null,
+  valor double,
+  cor varchar(10),
+  pesogr int
+
+);
+insert into  produtosestq (nomedoproduto, partnumber, valor, cor, pesogr) values ("Tenis", 01, 600.00, "Preto", "950");
+insert into  produtosestq (nomedoproduto, partnumber, valor, cor, pesogr) values ("Camiseta", 02, 199.00, "Branca", "150");
+insert into  produtosestq (nomedoproduto, partnumber, valor, cor, pesogr) values ("Meias", 03, 10.00, "Cinza", "100");
+insert into  produtosestq (nomedoproduto, partnumber, valor, cor, pesogr) values ("Calças", 04, 200.00, "Azul", "600");
+insert into  produtosestq (nomedoproduto, partnumber, valor, cor, pesogr) values ("Bermudas", 05, 70.00, "Colorida", "400);
+
+
+
+select * from produtosestq;
+select * from produtosestq where valor >500;
+select * from produtosestq where valor < 500;
+
